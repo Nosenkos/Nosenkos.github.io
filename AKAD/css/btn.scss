@@ -1,0 +1,94 @@
+.btn{
+	font-family: $monts;
+	border-radius: 0px;
+	text-transform: uppercase;
+	&-green{
+		@include cs($white,14,700,normal);
+		background: $green;
+		header &{
+			padding: 16px 35px 14px 39px;
+			position: relative;
+			bottom: -19px;
+		}
+		footer .right-side form &{
+			padding: 15px 45px 15px 48px;
+			vertical-align: top;
+		}
+		.team .gray-block &{
+			padding: 17px 37px 13px 37px;
+			margin-top: 0px;
+			@media screen and (max-width:$break991){
+				margin-right: 0px;
+			}
+		}
+		.contacts &{
+			padding: 16px 61px 14px 63px;
+			margin-bottom: 96px;
+		}
+		.labels &{
+			display: inline-block;
+			padding: 4px 9px;
+			margin-bottom: 31px;
+		}
+		&:hover{
+			color: $dark;
+		}
+	}
+	&-white{
+		@include cs($green,14,700,normal);
+		background: $white;
+		footer .left-side &{
+			padding: 15px 32px 14px 31px;
+		}
+	}
+}
+
+a{
+	text-transform: uppercase;
+	font-family: $opns;
+	h4~&{
+		display: block;
+		@include cs($choose_a,14,400,normal);
+		margin-top: 11px;
+		&:hover{
+			color: $dark;
+			text-decoration: none;
+		}
+		@media screen and (max-width:$break1199){
+				margin-right: -22px ;
+		}
+		@media screen and (max-width:$break991){
+			margin-right: -77px;
+		}
+		@media screen and (max-width:$break767){
+			margin-right: 0px;
+		}
+	}
+	.blog-block &.cont_read{
+		font-family: $monts;
+		display: block;
+		@include cs($dark,14,700,normal);
+		margin-top: 0px;
+		margin-bottom: 100px;
+		i[class*="ion-"]{
+			@include cs($dark,14,400,normal);
+			padding-left: 5px;
+		}
+	}
+	.contacts address &{
+		display: inline-block;
+		font-family: $opns;
+		@include cs($choose_a,14,700,normal);
+		text-transform: none;
+		letter-spacing: 0.5px;
+		&:hover{
+			color: $dark;
+			text-decoration: none;
+		}
+	}
+	.contacts address~&{
+		display: inline-block;
+		margin-top: 0px;
+		margin-right: 14px;
+	}
+}
