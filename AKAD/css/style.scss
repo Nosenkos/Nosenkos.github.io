@@ -27,6 +27,7 @@ $bg-home: "../images/homepage/bg.jpg";
 $bg-blog: "../images/blog/bg.jpg";
 $bg-about: "../images/about/bg.jpg";
 $bg-contact: "../images/contact/bg.jpg";
+$bg-services: "../images/services/bg.jpg";
 
 @mixin cs($color,$size,$weight,$l_height){
 	color: $color;
@@ -56,6 +57,10 @@ $bg-contact: "../images/contact/bg.jpg";
 		padding-left: 0px; 
 		padding-right: 4.7%;
 	}
+	.service &{
+		padding-left: 0px; 
+		padding-right: 0px;
+	}
 }
 
 .navbar-brand{
@@ -65,7 +70,7 @@ $bg-contact: "../images/contact/bg.jpg";
 		height: 0px; 
 		margin-bottom: 0px; 
 	}
-	.blog &, .about &, .contact &{
+	.blog &, .about &, .contact &, .service &{
 		padding: 0px;
 		margin-top: 43px;
 		height: 0px; 
@@ -110,6 +115,13 @@ header{
 	}
 	&.contact{
 		background: url($bg-contact) no-repeat center center;
+		-webkit-background-size: cover;
+		     -o-background-size: cover;
+		        background-size: cover;
+		padding-bottom: 163px;
+	}
+	&.service{
+		background: url($bg-services) no-repeat center center;
 		-webkit-background-size: cover;
 		     -o-background-size: cover;
 		        background-size: cover;
@@ -171,6 +183,19 @@ header{
 	width: 98%;
 	background: $green;
 	z-index: -1;
+	.services &{
+		width: 90%;
+	}
+	.levels &{
+		top: -45%;
+		left: -10%;
+		height: 127%;
+		width: 92%;
+	}
+	.levels .lamp &{
+	 left: -47%;
+	 width: 144%;
+	}
 }
 
 .img_bg{
@@ -269,6 +294,7 @@ p{
 			margin-bottom: 18px;
 			padding-left: 1px;
 			text-transform: uppercase;
+			letter-spacing: 0.6px;
 		}
 		&.under-text{
 			@include cs($dark_rgba,14,400,30px);
@@ -309,6 +335,59 @@ p{
 			margin-bottom: 15px;
 		}
 	}
+	section.services &{
+		&.under-text{
+			@include cs($dark,14,400,24px);
+			padding: 0% 18%;
+			margin-bottom: 87px;
+			@media screen and (max-width: $break767){
+				padding: 0px;
+			}
+		}
+		&.under-details, &.icon-checkbox{
+			@include cs($dark,14,400,30px);
+			padding: 0%;
+			margin-bottom: 32px;
+			@media screen and (max-width: $break767){
+				text-align: center;
+			}
+		}
+		&.icon-checkbox{
+			margin-bottom: 0px;
+			&.last{
+				margin-bottom: 20px;
+			}
+		}
+	}
+	section.levels &{
+		&.under-details{
+			@include cs($dark,14,400,30px);
+			padding: 0%;
+			margin-bottom: 32px;
+		}
+	}
+	section.price-plan &{
+		@include cs($dark,14,400,24px);
+		margin-bottom: 96px;
+		padding: 0% 18%;
+		@media screen and (max-width: $break767){
+			padding: 0px;
+		}
+		&.icon-checkbox{
+			padding: 0px;
+			margin-bottom: 40px;
+			line-height: 36px;
+		}
+		&.price-day{
+			display: inline-block;
+			padding: 5px 21px 6px 24px;
+			background: $green;
+			@include cs($white,14,700,normal);
+			text-transform: uppercase;
+			margin-bottom: 39px;
+			letter-spacing: 0.5px;
+		}
+	}
 }
 
 h1{
@@ -321,7 +400,7 @@ h1{
 		margin-top: 0px;
 		margin-bottom: 24px;
 	}
-	header.blog &, header.about &, header.contact &{
+	header.blog &, header.about &, header.contact &, header.service &{
 		@include cs($dark,36,700,normal);
 		text-align: center;
 		margin-top: 180px;
@@ -363,7 +442,7 @@ h2{
 		line-height: 48px;
 		margin-bottom: 16px;
 	}
-	header.blog &, header.about &, header.contact &{
+	header.blog &, header.about &, header.contact &, header.service &{
 		@include cs($dark,14,700,normal);
 		text-align: center;
 		margin-bottom: 0px;
@@ -378,6 +457,18 @@ h2{
 	section.team &{
 		padding-left: 2px;
 		margin-bottom: 16px;
+	}
+	section.services &{
+		padding-left: 3px;
+		margin-bottom: 16px;
+	}
+	section.price-plan &{
+		margin-bottom: 16px;
+		padding-left: 4px;
+	}
+	section.price-plan .offer-type &{
+		padding-left: 0px;
+		margin-bottom: 10px;
 	}
 }
 
@@ -426,6 +517,11 @@ h4{
 	.contacts &{
 		margin-top: 0px;
 		margin-bottom: 17px;
+	}
+	.levels &{
+		margin-top: 14px;
+		margin-bottom: 8px;
+		padding-left: 3px;
 	}
 }
 
@@ -776,18 +872,6 @@ span{
 	@media screen and (max-width: $break767){
 		text-align: center;
 	}
-	.left-padding{
-		padding-left: 0px;
-		@media screen and (max-width: $break767){
-			padding-right: 0px;
-		}
-	}
-	.right-padding{
-		padding-right: 0px;
-		@media screen and (max-width: $break767){
-			padding-left: 0px;
-		}
-	}
 	form{
 		margin-bottom: 0px;
 		input, textarea{
@@ -827,6 +911,67 @@ span{
 			padding-left: 15px;
 			padding-top: 30px;
 		}
+	}
+}
+
+.left-padding{
+	padding-left: 0px;
+	@media screen and (max-width: $break767){
+		padding-right: 0px;
+	}
+}
+.right-padding{
+	padding-right: 0px;
+	@media screen and (max-width: $break767){
+		padding-left: 0px;
+	}
+}
+
+.services{
+	padding: 143px 0px 148px;
+	i[class*="ion-"]{
+		@include cs($green,14,400,normal);
+		margin-right: 6px;
+	}
+	img{
+		padding-top: 9px;
+		width: 100%;
+	}
+}
+
+.levels{
+	padding-bottom: 105px;
+	i[class*="ion-"]{
+		@include cs($dark,60,400,normal);
+	}
+}
+
+.price-plan{
+	padding-bottom: 150px;
+	.offer-type{
+		padding: 23px 32px 40px 30px;
+		position: relative;
+		border-top: 5px solid $green;
+		@media screen and (max-width: $break767){
+				text-align: center;
+				margin-bottom: 30px;
+			}
+		&:after{
+			content: "";
+			display: block; 
+			position: absolute;
+			top: 0;
+			right: 0;
+			border-bottom: 11px solid transparent;
+			border-right: 11px solid $green;
+		}
+		&:hover{
+			box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.25);
+		}
+	}
+	i[class*="ion-"]{
+		@include cs($green,14,400,normal);
+		margin-right: 10px;
 	}
 }
 

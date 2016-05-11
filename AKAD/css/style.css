@@ -30,6 +30,9 @@
       display: inline-block;
       padding: 4px 9px;
       margin-bottom: 31px; }
+    .price-plan .offer-type .btn-green {
+      font-weight: 400;
+      padding: 16px 18px 14px 18px; }
     .btn-green:hover {
       color: #60606e; }
   .btn-white {
@@ -110,13 +113,16 @@ a {
   .contact .navbar-collapse {
     padding-left: 0px;
     padding-right: 4.7%; }
+  .service .navbar-collapse {
+    padding-left: 0px;
+    padding-right: 0px; }
 
 .homepage .navbar-brand {
   padding: 0px;
   margin-top: 43px;
   height: 0px;
   margin-bottom: 0px; }
-.blog .navbar-brand, .about .navbar-brand, .contact .navbar-brand {
+.blog .navbar-brand, .about .navbar-brand, .contact .navbar-brand, .service .navbar-brand {
   padding: 0px;
   margin-top: 43px;
   height: 0px;
@@ -153,6 +159,12 @@ header.about {
   padding-bottom: 163px; }
 header.contact {
   background: url("../images/contact/bg.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding-bottom: 163px; }
+header.service {
+  background: url("../images/services/bg.jpg") no-repeat center center;
   -webkit-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
@@ -206,6 +218,16 @@ header.contact {
   width: 98%;
   background: #7beec7;
   z-index: -1; }
+  .services .green-block:before {
+    width: 90%; }
+  .levels .green-block:before {
+    top: -45%;
+    left: -10%;
+    height: 127%;
+    width: 92%; }
+  .levels .lamp .green-block:before {
+    left: -47%;
+    width: 144%; }
 
 .img_bg {
   position: absolute;
@@ -306,7 +328,8 @@ p {
       line-height: normal;
       margin-bottom: 18px;
       padding-left: 1px;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      letter-spacing: 0.6px; }
     section.what_we_do p.under-text {
       color: rgba(96, 96, 110, 0.5);
       font-size: 14px;
@@ -350,6 +373,62 @@ p {
     font-weight: 400;
     line-height: 30px;
     margin-bottom: 15px; }
+  section.services p.under-text {
+    color: #60606e;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    padding: 0% 18%;
+    margin-bottom: 87px; }
+    @media screen and (max-width: 767px) {
+      section.services p.under-text {
+        padding: 0px; } }
+  section.services p.under-details, section.services p.icon-checkbox {
+    color: #60606e;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+    padding: 0%;
+    margin-bottom: 32px; }
+    @media screen and (max-width: 767px) {
+      section.services p.under-details, section.services p.icon-checkbox {
+        text-align: center; } }
+  section.services p.icon-checkbox {
+    margin-bottom: 0px; }
+    section.services p.icon-checkbox.last {
+      margin-bottom: 20px; }
+  section.levels p.under-details {
+    color: #60606e;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+    padding: 0%;
+    margin-bottom: 32px; }
+  section.price-plan p {
+    color: #60606e;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 96px;
+    padding: 0% 18%; }
+    @media screen and (max-width: 767px) {
+      section.price-plan p {
+        padding: 0px; } }
+    section.price-plan p.icon-checkbox {
+      padding: 0px;
+      margin-bottom: 40px;
+      line-height: 36px; }
+    section.price-plan p.price-day {
+      display: inline-block;
+      padding: 5px 21px 6px 24px;
+      background: #7beec7;
+      color: #fff;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: normal;
+      text-transform: uppercase;
+      margin-bottom: 39px;
+      letter-spacing: 0.5px; }
 
 h1 {
   font-family: "Montserrat", sans-serif;
@@ -363,7 +442,7 @@ h1 {
     padding: 9px 0px 12px;
     margin-top: 0px;
     margin-bottom: 24px; }
-  header.blog h1, header.about h1, header.contact h1 {
+  header.blog h1, header.about h1, header.contact h1, header.service h1 {
     color: #60606e;
     font-size: 36px;
     font-weight: 700;
@@ -404,7 +483,7 @@ h2 {
     color: #fff;
     line-height: 48px;
     margin-bottom: 16px; }
-  header.blog h2, header.about h2, header.contact h2 {
+  header.blog h2, header.about h2, header.contact h2, header.service h2 {
     color: #60606e;
     font-size: 14px;
     font-weight: 700;
@@ -418,6 +497,15 @@ h2 {
   section.team h2 {
     padding-left: 2px;
     margin-bottom: 16px; }
+  section.services h2 {
+    padding-left: 3px;
+    margin-bottom: 16px; }
+  section.price-plan h2 {
+    margin-bottom: 16px;
+    padding-left: 4px; }
+  section.price-plan .offer-type h2 {
+    padding-left: 0px;
+    margin-bottom: 10px; }
 
 h3 {
   font-family: "Montserrat", sans-serif;
@@ -463,6 +551,10 @@ h4 {
   .contacts h4 {
     margin-top: 0px;
     margin-bottom: 17px; }
+  .levels h4 {
+    margin-top: 14px;
+    margin-bottom: 8px;
+    padding-left: 3px; }
 
 .blog-block h5 {
   color: #60606e;
@@ -766,16 +858,6 @@ h4 {
   @media screen and (max-width: 767px) {
     .contacts {
       text-align: center; } }
-  .contacts .left-padding {
-    padding-left: 0px; }
-    @media screen and (max-width: 767px) {
-      .contacts .left-padding {
-        padding-right: 0px; } }
-  .contacts .right-padding {
-    padding-right: 0px; }
-    @media screen and (max-width: 767px) {
-      .contacts .right-padding {
-        padding-left: 0px; } }
   .contacts form {
     margin-bottom: 0px; }
     .contacts form input, .contacts form textarea {
@@ -814,6 +896,65 @@ h4 {
       .contacts img {
         padding-left: 15px;
         padding-top: 30px; } }
+
+.left-padding {
+  padding-left: 0px; }
+  @media screen and (max-width: 767px) {
+    .left-padding {
+      padding-right: 0px; } }
+
+.right-padding {
+  padding-right: 0px; }
+  @media screen and (max-width: 767px) {
+    .right-padding {
+      padding-left: 0px; } }
+
+.services {
+  padding: 143px 0px 148px; }
+  .services i[class*="ion-"] {
+    color: #7beec7;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+    margin-right: 6px; }
+  .services img {
+    padding-top: 9px;
+    width: 100%; }
+
+.levels {
+  padding-bottom: 105px; }
+  .levels i[class*="ion-"] {
+    color: #60606e;
+    font-size: 60px;
+    font-weight: 400;
+    line-height: normal; }
+
+.price-plan {
+  padding-bottom: 150px; }
+  .price-plan .offer-type {
+    padding: 23px 32px 40px 30px;
+    position: relative;
+    border-top: 5px solid #7beec7; }
+    @media screen and (max-width: 767px) {
+      .price-plan .offer-type {
+        text-align: center;
+        margin-bottom: 30px; } }
+    .price-plan .offer-type:after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      border-bottom: 11px solid transparent;
+      border-right: 11px solid #7beec7; }
+    .price-plan .offer-type:hover {
+      box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.25); }
+  .price-plan i[class*="ion-"] {
+    color: #7beec7;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+    margin-right: 10px; }
 
 footer.green-bg {
   background: #7beec7;
