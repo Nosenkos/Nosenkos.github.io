@@ -21,6 +21,7 @@ $bg-input: #fefcf9;
 $break1199: 1199px;
 $break991: 991px;
 $break767: 767px;
+$break686: 686px;
 $break621: 621px;
 $break584: 584px;
 $break480: 480px;
@@ -688,7 +689,7 @@ span{
 		font-size: 0px;
 		&.outer-menu{
 			@media screen and (max-width:$break767){
-				float: right;
+				text-align: center;
 			}
 			@media screen and (max-width:$break584){
 				float: none;
@@ -717,9 +718,18 @@ span{
 					color: $green;
 					background: transparent;
 				}
+				@media screen and (max-width:$break686){
+					padding-left: 0px;
+				}
 			}
 		}
 		li{
+			@media screen and (max-width:$break767){
+				display: inline-block;
+			}
+			@media screen and (max-width:$break686){
+				display: block;
+			}
 			a{
 				font-family: $monts;
 				display: inline-block;
@@ -738,6 +748,11 @@ span{
 		}
 		&[src="images/homepage/choose3.jpg"]{
 			padding-top: 15px;
+		}
+	}
+	.left-menu{
+		@media screen and (max-width:$break767){
+			text-align: center;
 		}
 	}
 }

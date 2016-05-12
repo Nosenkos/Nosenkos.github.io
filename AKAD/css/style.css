@@ -117,6 +117,8 @@ a {
     margin-right: 14px; }
   a:hover {
     text-decoration: none; }
+  a:focus {
+    text-decoration: none; }
 
 .navbar-default {
   background: none;
@@ -727,7 +729,7 @@ h4 {
     font-size: 0px; }
     @media screen and (max-width: 767px) {
       .portfolio ul.outer-menu {
-        float: right; } }
+        text-align: center; } }
     @media screen and (max-width: 584px) {
       .portfolio ul.outer-menu {
         float: none;
@@ -756,6 +758,15 @@ h4 {
       .portfolio ul.inner-menu > li a:hover {
         color: #7beec7;
         background: transparent; }
+      @media screen and (max-width: 686px) {
+        .portfolio ul.inner-menu > li a {
+          padding-left: 0px; } }
+    @media screen and (max-width: 767px) {
+      .portfolio ul li {
+        display: inline-block; } }
+    @media screen and (max-width: 686px) {
+      .portfolio ul li {
+        display: block; } }
     .portfolio ul li a {
       font-family: "Montserrat", sans-serif;
       display: inline-block;
@@ -770,6 +781,9 @@ h4 {
         width: 100%; } }
     .portfolio img[src="images/homepage/choose3.jpg"] {
       padding-top: 15px; }
+  @media screen and (max-width: 767px) {
+    .portfolio .left-menu {
+      text-align: center; } }
 
 .blog-block {
   padding: 150px 0px 50px; }
