@@ -14,6 +14,9 @@
       padding: 16px 35px 14px 39px;
       position: relative;
       bottom: -19px; }
+      @media screen and (max-width: 480px) {
+        header .btn-green {
+          right: calc(50% - 82px); } }
     footer .right-side form .btn-green {
       padding: 15px 45px 15px 48px;
       vertical-align: top; }
@@ -26,6 +29,9 @@
     .contacts .btn-green {
       padding: 16px 61px 14px 63px;
       margin-bottom: 96px; }
+      @media screen and (max-width: 480px) {
+        .contacts .btn-green {
+          margin-bottom: 30px; } }
     .labels .btn-green {
       display: inline-block;
       padding: 4px 9px;
@@ -75,12 +81,24 @@ a {
     line-height: normal;
     margin-top: 0px;
     margin-bottom: 100px; }
+    @media screen and (max-width: 480px) {
+      .blog-block a.cont_read {
+        margin-bottom: 30px; } }
     .blog-block a.cont_read i[class*="ion-"] {
       color: #60606e;
       font-size: 14px;
       font-weight: 400;
       line-height: normal;
       padding-left: 5px; }
+  .blog-block a.likes_com {
+    display: inline-block;
+    margin-right: 16px;
+    margin-top: 0px; }
+    @media screen and (max-width: 584px) {
+      .blog-block a.likes_com {
+        margin-right: 9px; } }
+  .blog-block a.category, .blog-block a.archiv {
+    text-transform: none; }
   .contacts address a {
     display: inline-block;
     font-family: "Open Sans", sans-serif;
@@ -97,6 +115,8 @@ a {
     display: inline-block;
     margin-top: 0px;
     margin-right: 14px; }
+  a:hover {
+    text-decoration: none; }
 
 .navbar-default {
   background: none;
@@ -205,6 +225,9 @@ header.service {
   background: #7beec7;
   padding: 7px 17px 2px 21px;
   margin-top: 125px; }
+  @media screen and (max-width: 480px) {
+    .before-h1 {
+      margin-top: 60px; } }
 
 .green-block {
   position: relative;
@@ -236,6 +259,9 @@ header.service {
     .img_bg {
       width: 100%;
       position: static; } }
+  @media screen and (max-width: 480px) {
+    .img_bg {
+      margin-bottom: 30px; } }
 
 p {
   font-family: "Open Sans", sans-serif; }
@@ -246,6 +272,9 @@ p {
     line-height: 24px; }
     header p.under-text {
       margin-bottom: 145px; }
+      @media screen and (max-width: 480px) {
+        header p.under-text {
+          margin-bottom: 60px; } }
     header h2 + p.under-text {
       line-height: 30px;
       margin-bottom: 0px; }
@@ -262,6 +291,9 @@ p {
         .choose-block p.under-text, .portfolio p.under-text {
           padding-left: 0px;
           padding-right: 0px; } }
+      @media screen and (max-width: 480px) {
+        .choose-block p.under-text, .portfolio p.under-text {
+          margin-bottom: 50px; } }
     .portfolio p.under-text {
       padding-left: 12%;
       padding-right: 17%;
@@ -270,6 +302,9 @@ p {
         .portfolio p.under-text {
           padding-left: 0px;
           padding-right: 0px; } }
+      @media screen and (max-width: 480px) {
+        .portfolio p.under-text {
+          margin-bottom: 60px; } }
     footer .right-side p.under-text {
       color: #999;
       margin-bottom: 27px; }
@@ -288,10 +323,7 @@ p {
       font-weight: 400;
       line-height: normal;
       display: inline-block;
-      padding: 5px 16px 0px 0px; }
-      @media screen and (max-width: 584px) {
-        .blog-block p.comments, .blog-block p.likes {
-          padding-right: 9px; } }
+      padding: 7px 0px 0px; }
     .blog-block p.date {
       display: inline-block;
       color: #fff;
@@ -308,7 +340,8 @@ p {
       font-size: 14px;
       font-weight: 400;
       line-height: 24px;
-      margin-bottom: 16px; }
+      margin-bottom: 18px;
+      padding-left: 2px; }
     .blog-block p.categories, .blog-block p.archives {
       font-family: "Open Sans", sans-serif;
       color: #60606e;
@@ -336,6 +369,9 @@ p {
       font-weight: 400;
       line-height: 30px;
       margin-bottom: 0px; }
+      @media screen and (max-width: 480px) {
+        section.what_we_do p.under-text {
+          margin-bottom: 30px; } }
   section.benefits p {
     font-family: "Open Sans", sans-serif; }
     section.benefits p.under-text {
@@ -345,6 +381,9 @@ p {
       line-height: 24px;
       padding: 0% 18%;
       margin-bottom: 95px; }
+      @media screen and (max-width: 480px) {
+        section.benefits p.under-text {
+          margin-bottom: 30px; } }
     section.benefits p.under-details {
       color: rgba(96, 96, 110, 0.5);
       font-size: 14px;
@@ -352,6 +391,9 @@ p {
       line-height: 30px;
       margin-top: 9px;
       margin-bottom: 45px; }
+      @media screen and (max-width: 480px) {
+        section.benefits p.under-details {
+          margin-bottom: 30px; } }
   section.team p.under-text {
     color: rgba(96, 96, 110, 0.5);
     font-size: 14px;
@@ -359,6 +401,9 @@ p {
     line-height: 24px;
     padding: 0% 18%;
     margin-bottom: 96px; }
+    @media screen and (max-width: 480px) {
+      section.team p.under-text {
+        margin-bottom: 30px; } }
   section.labels p.under-text {
     color: rgba(96, 96, 110, 0.5);
     font-size: 14px;
@@ -383,6 +428,9 @@ p {
     @media screen and (max-width: 767px) {
       section.services p.under-text {
         padding: 0px; } }
+    @media screen and (max-width: 480px) {
+      section.services p.under-text {
+        margin-bottom: 30px; } }
   section.services p.under-details, section.services p.icon-checkbox {
     color: #60606e;
     font-size: 14px;
@@ -411,6 +459,9 @@ p {
     line-height: 24px;
     margin-bottom: 96px;
     padding: 0% 18%; }
+    @media screen and (max-width: 480px) {
+      section.price-plan p {
+        margin-bottom: 30px; } }
     @media screen and (max-width: 767px) {
       section.price-plan p {
         padding: 0px; } }
@@ -450,6 +501,9 @@ h1 {
     text-align: center;
     margin-top: 180px;
     margin-bottom: 17px; }
+    @media screen and (max-width: 480px) {
+      header.blog h1, header.about h1, header.contact h1, header.service h1 {
+        margin-top: 60px; } }
 
 h2 {
   font-family: "Montserrat", sans-serif;
@@ -616,11 +670,18 @@ h4 {
 .choose-block {
   padding-top: 241px;
   padding-bottom: 141px; }
+  @media screen and (max-width: 480px) {
+    .choose-block {
+      padding-top: 60px;
+      padding-bottom: 60px; } }
   .choose-block .options, .choose-block .design {
     padding: 15px 0px 37px 2px; }
     @media screen and (max-width: 767px) {
       .choose-block .options, .choose-block .design {
         text-align: center; } }
+    @media screen and (max-width: 621px) {
+      .choose-block .options, .choose-block .design {
+        padding: 5px 0px 27px 2px; } }
     .choose-block .options i[class*="ion-"], .choose-block .design i[class*="ion-"] {
       color: #60606e;
       font-size: 36px;
@@ -657,6 +718,9 @@ h4 {
 
 .portfolio {
   padding-bottom: 132px; }
+  @media screen and (max-width: 480px) {
+    .portfolio {
+      padding-bottom: 60px; } }
   .portfolio ul {
     margin-bottom: 0;
     font-size: 0px; }
@@ -708,6 +772,9 @@ h4 {
 
 .blog-block {
   padding: 150px 0px 50px; }
+  @media screen and (max-width: 480px) {
+    .blog-block {
+      padding-top: 60px; } }
   .blog-block img {
     padding-bottom: 29px; }
     @media screen and (max-width: 1199px) {
@@ -719,7 +786,7 @@ h4 {
     font-size: 18px;
     font-weight: 400;
     line-height: normal;
-    padding-top: 6px;
+    padding-top: 5px;
     padding-right: 5px; }
   .blog-block i[class="ion-android-favorite"] {
     color: #ea6a6a; }
@@ -780,12 +847,18 @@ h4 {
 
 .what_we_do {
   padding: 143px 0px 149px; }
+  @media screen and (max-width: 480px) {
+    .what_we_do {
+      padding: 60px 0px; } }
   @media screen and (max-width: 767px) {
     .what_we_do {
       text-align: center; } }
 
 .benefits {
   padding-bottom: 91px; }
+  @media screen and (max-width: 480px) {
+    .benefits {
+      padding-bottom: 60px; } }
   @media screen and (max-width: 767px) {
     .benefits div[class*="col-"] {
       text-align: center !important; } }
@@ -813,6 +886,9 @@ h4 {
 
 .labels {
   padding: 150px 0px; }
+  @media screen and (max-width: 480px) {
+    .labels {
+      padding: 60px 0px; } }
   .labels .faces {
     display: inline-block;
     width: 83px;
@@ -855,6 +931,9 @@ h4 {
 .contacts {
   font-family: "Montserrat", sans-serif;
   padding: 150px 0px 148px; }
+  @media screen and (max-width: 480px) {
+    .contacts {
+      padding: 60px 0px; } }
   @media screen and (max-width: 767px) {
     .contacts {
       text-align: center; } }
@@ -912,6 +991,9 @@ h4 {
 
 .services {
   padding: 143px 0px 148px; }
+  @media screen and (max-width: 480px) {
+    .services {
+      padding: 60px 0px; } }
   .services i[class*="ion-"] {
     color: #7beec7;
     font-size: 14px;
@@ -924,6 +1006,9 @@ h4 {
 
 .levels {
   padding-bottom: 105px; }
+  @media screen and (max-width: 480px) {
+    .levels {
+      padding-bottom: 60px; } }
   .levels i[class*="ion-"] {
     color: #60606e;
     font-size: 60px;
@@ -932,6 +1017,9 @@ h4 {
 
 .price-plan {
   padding-bottom: 150px; }
+  @media screen and (max-width: 480px) {
+    .price-plan {
+      padding-bottom: 60px; } }
   .price-plan .offer-type {
     padding: 23px 32px 40px 30px;
     position: relative;
