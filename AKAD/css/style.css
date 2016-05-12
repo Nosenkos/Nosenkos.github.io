@@ -403,7 +403,8 @@ p {
     margin-bottom: 96px; }
     @media screen and (max-width: 480px) {
       section.team p.under-text {
-        margin-bottom: 30px; } }
+        margin-bottom: 30px;
+        padding: 0px; } }
   section.labels p.under-text {
     color: rgba(96, 96, 110, 0.5);
     font-size: 14px;
